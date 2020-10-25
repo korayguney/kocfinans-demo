@@ -1,0 +1,4 @@
+kocfinans:
+  mockdata: https://raw.githubusercontent.com/korayguney/kocfinans-json/main/db.json
+server:
+  port: 8082

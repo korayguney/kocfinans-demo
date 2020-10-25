@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Koç Finans-Kredi Hesaplayıcı</title>
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">Hakkında</h4>
+                    <p class="text-muted">Bu demo projesi Koç Finans A.Ş. için hazırlanmıştır. Geliştirici: Koray Güney</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Kredi Hesaplayıcı &nbsp;
+        <img src="https://mobilweb.kocfinans.com.tr/images/logo.png" alt="kocfinanslogo" width="490" height="100">
+        </h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+
+        <div class="col-md-4">
+            <br>
+            <div>
+                <h4>Kimlik Numarası : </h4>
+                <input type="text" class="form-control" placeholder="11 Haneli" id="tckimlikInput">
+            </div>
+            <br>
+            <div>
+                <h4>Ad Soyad : </h4>
+                <input type="text" class="form-control" placeholder="Ad ve Soyad" id="adsoyadInput">
+            </div>
+            <br>
+            <div>
+                <h4>Aylık Gelir : </h4>
+                <input type="text" class="form-control" placeholder="TL cinsinden, küsürat belirtmeyiniz!" id="gelirInput">
+            </div>
+            <br>
+            <div>
+                <h4>Telefon : </h4>
+                <input type="text" class="form-control" placeholder="Telefon No." id="telefonInput">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-success" type="button" id="hesaplaButton">HESAPLA!</button>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <h2>Sonuç</h2>
+
+            <h3 id="sonucHesapla"></h3>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>@Koray Guney</p>
+    </footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/credit-score-kocfinans.js"></script>
+
+</body>
+</html>
