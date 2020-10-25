@@ -2,6 +2,8 @@ package com.kocfinans.creditscore.controllers;
 
 import com.kocfinans.creditscore.models.Customer;
 import com.kocfinans.creditscore.services.CreditScoreService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,7 @@ public class CreditScoreController {
 
 
     private CreditScoreService creditScoreService;
+    Logger logger = LogManager.getLogger(CreditScoreController.class);
 
     public CreditScoreController(CreditScoreService creditScoreService) {
         this.creditScoreService = creditScoreService;
@@ -42,7 +45,7 @@ public class CreditScoreController {
                 result = "Kredi Onaylanmıştır! \nMevcut kredi puanı : " + scoreResult.get();
                 result = result + "\nKullanılabilir Kredi Miktarı : "+(customer.getMonthly_salary() * 4) +" TL.";
             }
-
+            logger.info("SMS Send with below text : " + result);
             return ResponseEntity.ok(result);
         }
 
