@@ -16,7 +16,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Optional;
 
 @RunWith(MockitoJUnitRunner.class)
-@SpringBootApplication
 public class CreditScoreServiceTest {
 
     @Mock
