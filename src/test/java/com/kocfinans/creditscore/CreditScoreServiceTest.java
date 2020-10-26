@@ -1,4 +1,4 @@
-package currencyconverter;
+package com.kocfinans.creditscore;
 
 import com.kocfinans.creditscore.models.CreditScore;
 import com.kocfinans.creditscore.models.Customer;

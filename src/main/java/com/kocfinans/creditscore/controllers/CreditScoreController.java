@@ -18,7 +18,7 @@ public class CreditScoreController {
 
 
     private CreditScoreService creditScoreService;
-    Logger logger = LogManager.getLogger(CreditScoreController.class);
+    private Logger logger = LogManager.getLogger(CreditScoreController.class);
 
     public CreditScoreController(CreditScoreService creditScoreService) {
         this.creditScoreService = creditScoreService;

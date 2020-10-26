@@ -1,4 +1,4 @@
-package currencyconverter;
+package com.kocfinans.creditscore;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -45,8 +45,6 @@ public class CreditScoreLoaderUtil {
     @Scheduled(fixedRate = 6 * 1000 * 60 * 60)
     private void saveMockCreditScores() {
         try {
-            // RestTemplate restTemplate = new RestTemplate();
-
             CreditScoreDTO scores = restTemplate().getForObject(testDataUrl, CreditScoreDTO.class);
             scores.getScores().forEach((key, value) -> {
                 CreditScore score = new CreditScore(key, value);
